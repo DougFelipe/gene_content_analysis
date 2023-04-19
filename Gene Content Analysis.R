@@ -53,6 +53,7 @@ rownames(cor_matrix) <- gsub("genome:", "", rownames(cor_matrix))
 
 # Plotando o heatmap
 pheatmap(cor_matrix,
+         #Parametros que alteram tamanho, angulo e coloca a fonte em negrito
          fontsize_row = 15, fontsize_col = 15,
          fontfamily_row = "bold", fontfamily_col = "bold",
          angle_col = 45)
